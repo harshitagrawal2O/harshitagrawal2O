@@ -1,19 +1,16 @@
 <div align="center">
 
-<a href="https://harshitagrawal.ccbp.tech">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&pause=1200&color=6366F1&center=true&vCenter=true&width=780&lines=Harshit+Agrawal;CS+(AI%2FML)+%40+Ramaiah+Institute+of+Technology;I+build+from+the+storage+engine+up;Smart+India+Hackathon+2025+%E2%80%94+Runner-Up" alt="Harshit Agrawal" />
-</a>
+<a href="https://harshitagrawal.ccbp.tech"><img src="assets/hero.svg" width="900" alt="Harshit Agrawal - Co-founder and Engineering Lead, GO-AT Technologies" /></a>
 
-<br/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1400&color=8B949E&center=true&vCenter=true&width=760&height=42&lines=systems%2C+from+the+storage+engine+up;applied+AI+that+ships+to+real+users;Smart+India+Hackathon+2025+%E2%80%94+Runner-Up;open+to+software+engineering+roles" alt="" />
 
-<a href="https://harshitagrawal.ccbp.tech"><img src="https://img.shields.io/badge/portfolio-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+<a href="https://harshitagrawal.ccbp.tech"><img src="https://img.shields.io/badge/portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0D1117" alt="Portfolio" /></a>
 <a href="https://linkedin.com/in/harshitagrawal700"><img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:harshitagra8092@gmail.com"><img src="https://img.shields.io/badge/email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<img src="https://komarev.com/ghpvc/?username=harshitagrawal2O&style=for-the-badge&color=6366F1&label=profile+views" alt="Profile views" />
+<img src="https://img.shields.io/badge/open_to_SWE_roles-3FB950?style=for-the-badge&logoColor=white" alt="Open to SWE roles" />
+<img src="https://komarev.com/ghpvc/?username=harshitagrawal2O&style=for-the-badge&color=6366F1&label=views" alt="Profile views" />
 
 </div>
-
----
 
 ### `~ whoami`
 
@@ -27,33 +24,21 @@ const harshit = {
 } as const;
 ```
 
-Final-year CS (AI/ML) student who likes both ends of the stack: training and wiring up models on
-one side, hand-rolling B+ trees and write-ahead logs on the other. Most of what I build ends up in
-front of actual users - clients, campuses, or a hackathon jury.
+Final-year CS (AI/ML) student who works both ends of the stack: training and wiring up models on one
+side, hand-rolling B+ trees and write-ahead logs on the other. Most of what I build ends up in front
+of real users - clients, campuses, or a hackathon jury.
 
 <br/>
 
 ## Anatomy of what I ship
 
-```mermaid
-flowchart LR
-    U["Users<br/>web + mobile"] --> F["Next.js / React Native"]
-    F --> A["API layer<br/>FastAPI / Express"]
-    A --> Q["Redis + BullMQ<br/>async workers"]
-    A --> D[("PostgreSQL<br/>Prisma / SQLAlchemy")]
-    Q --> M["ML services<br/>OpenCV, sklearn, LLMs + RAG"]
-    M --> D
-    D --> C["AWS<br/>EC2 / S3 / Lambda"]
-
-    classDef accent fill:#6366F1,stroke:#4338CA,color:#ffffff
-    classDef core fill:#111827,stroke:#374151,color:#ffffff
-    class U,F accent
-    class A,Q,D,M,C core
-```
+<div align="center"><img src="assets/architecture.svg" width="900" alt="Five layers: client, API, async and inference, data, infrastructure" /></div>
 
 <br/>
 
 ## Selected work
+
+<!-- Repo links go here once these are public: [MiniDB](url) etc. -->
 
 | Project | Why it is interesting |
 | :--- | :--- |
@@ -63,15 +48,24 @@ flowchart LR
 | **Parchhai**<br/><sub>`Next.js` `Expo` `Prisma` `Neon`</sub> | D2C fashion commerce, end to end - storefront, cross-platform mobile app, cart, checkout, order tracking and admin, all over one shared REST API on Neon Postgres. |
 | **Proof-of-Inference**<br/><sub>`Solidity` `Polygon`</sub> | A browser-native cryptocurrency concept where **model inference is the proof of work**. Wrote the whitepaper and the smart contract specification. |
 
-<sub>Also around: **PaperForge** - self-hosted PDF toolkit (React, FastAPI, Docker) &nbsp;·&nbsp; **GuestPay** - prepaid web wallet for paying from borrowed devices (Node, Stripe, Postgres)</sub>
+<details>
+<summary><b>Also on the shelf</b> - smaller things I have shipped</summary>
+<br/>
+
+- **PaperForge** - self-hosted PDF toolkit for merge, split, annotation and conversion. `React` `FastAPI` `Docker`
+- **GuestPay** - prepaid web wallet so you can pay from someone else's device without exposing credentials. `Node.js` `React` `Stripe` `PostgreSQL`
+- **Judicial Delay Analysis** - study over 173,000+ Indian eCourts records, K-Means clustering plus gradient boosting to locate where delay actually accumulates. Manuscript in IEEEtran format, targeting *Springer AI and Law*.
+
+</details>
 
 <br/>
 
-## Research
+## One project, one level deeper
 
-**Judicial Delay Analysis using eCourts Data** - co-authored a study over 173,000+ Indian court
-records, using K-Means clustering and gradient boosting to surface where delay actually
-accumulates. Manuscript in IEEEtran format, targeting *Springer AI and Law*.
+Most portfolios stop at "built a database". Here is what is actually inside MiniDB - every box is code
+I wrote rather than a library I imported.
+
+<div align="center"><img src="assets/minidb.svg" width="900" alt="MiniDB query lifecycle: SQL text, tokeniser, parser, plan, executor, then buffer pool, B+ tree and write-ahead log" /></div>
 
 <br/>
 
@@ -79,8 +73,7 @@ accumulates. Manuscript in IEEEtran format, targeting *Springer AI and Law*.
 
 <div align="center">
 
-**Languages**
-
+<sub>**LANGUAGES**</sub><br/>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
@@ -88,15 +81,13 @@ accumulates. Manuscript in IEEEtran format, targeting *Springer AI and Law*.
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
 
-**AI / ML**
-
+<sub>**AI / ML**</sub><br/>
 ![Deep Learning](https://img.shields.io/badge/Deep_Learning-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![LLMs and RAG](https://img.shields.io/badge/LLMs_+_RAG-6366F1?style=flat-square&logo=openai&logoColor=white)
 
-**Build and run**
-
+<sub>**BUILD AND RUN**</sub><br/>
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -122,25 +113,22 @@ accumulates. Manuscript in IEEEtran format, targeting *Springer AI and Law*.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=harshitagrawal2O&show_icons=true&hide_border=true&bg_color=00000000&title_color=6366F1&icon_color=6366F1&text_color=808080&include_all_commits=true&rank_icon=github" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=harshitagrawal2O&layout=compact&hide_border=true&bg_color=00000000&title_color=6366F1&text_color=808080&langs_count=8" alt="Top languages" />
+<img src="assets/stats.svg" width="900" alt="GitHub activity: repositories, contributions, commits and language distribution" />
 
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=harshitagrawal2O&hide_border=true&background=00000000&stroke=6366F1&ring=6366F1&fire=EA4335&currStreakLabel=6366F1&sideLabels=808080&dates=808080" alt="Streak" />
+<sub>That panel is not a third-party widget - <a href="scripts/render-stats.mjs">a script in this repo</a> queries the GitHub GraphQL API and renders the SVG on a schedule.</sub>
 
 <br/><br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/harshitagrawal2O/harshitagrawal2O/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/harshitagrawal2O/harshitagrawal2O/output/snake.svg" />
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/harshitagrawal2O/harshitagrawal2O/output/snake.svg" />
+  <img src="https://raw.githubusercontent.com/harshitagrawal2O/harshitagrawal2O/output/snake.svg" alt="Contribution snake" />
 </picture>
 
 <br/><br/>
 
 **Open to software engineering roles where I can own features end to end.**
 
-<sub>Bengaluru, India &nbsp;·&nbsp; <a href="mailto:harshitagra8092@gmail.com">harshitagra8092@gmail.com</a></sub>
+<sub>Bengaluru, India &nbsp;·&nbsp; <a href="mailto:harshitagra8092@gmail.com">harshitagra8092@gmail.com</a> &nbsp;·&nbsp; <a href="https://harshitagrawal.ccbp.tech">harshitagrawal.ccbp.tech</a></sub>
 
 </div>

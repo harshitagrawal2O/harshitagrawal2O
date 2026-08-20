@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="315" viewBox="0 0 900 315" role="img" aria-label="MiniDB query lifecycle: SQL text through tokeniser, parser, plan and executor into the storage layer">
+  <defs>
+    <pattern id="g2" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1" fill="#30363D"/>
+    </pattern>
+    <marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 1 L9 5 L0 9 z" fill="#6E7681"/>
+    </marker>
+    <marker id="arwa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 1 L9 5 L0 9 z" fill="#D29922"/>
+    </marker>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      .t    { font-size: 12.5px; font-weight: 700; fill: #E6EDF3; }
+      .s    { font-size: 10.5px; fill: #7D8590; }
+      .cap  { font-size: 11px; fill: #8B949E; }
+    </style>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="899" height="314" rx="14" fill="#0D1117" stroke="#21262D"/>
+  <rect x="1" y="1" width="898" height="313" rx="13" fill="url(#g2)" opacity="0.4"/>
+
+  <g class="mono">
+    <text x="45" y="30" font-size="12.5" font-weight="700" fill="#22D3EE" letter-spacing="1.2">MiniDB &#183; QUERY LIFECYCLE</text>
+    <text x="855" y="30" font-size="11" fill="#484F58" text-anchor="end">C++ &#183; hand-rolled, no library</text>
+
+    <!-- front end -->
+    <g>
+      <rect x="45"  y="52" width="150" height="56" rx="9" fill="#161B22" stroke="#30363D"/>
+      <text class="t" x="61" y="78">SQL text</text>
+      <text class="s" x="61" y="95">CREATE / INSERT / SELECT</text>
+
+      <rect x="210" y="52" width="150" height="56" rx="9" fill="#161B22" stroke="#30363D"/>
+      <text class="t" x="226" y="78">Tokeniser</text>
+      <text class="s" x="226" y="95">chars &#8594; tokens</text>
+
+      <rect x="375" y="52" width="150" height="56" rx="9" fill="#161B22" stroke="#30363D"/>
+      <text class="t" x="391" y="78">Parser</text>
+      <text class="s" x="391" y="95">recursive descent</text>
+
+      <rect x="540" y="52" width="150" height="56" rx="9" fill="#161B22" stroke="#30363D"/>
+      <text class="t" x="556" y="78">Plan</text>
+      <text class="s" x="556" y="95">WHERE &#8594; predicate</text>
+
+      <rect x="705" y="52" width="150" height="56" rx="9" fill="#6366F1" fill-opacity="0.14" stroke="#6366F1" stroke-opacity="0.6"/>
+      <text class="t" x="721" y="78" fill="#C7D2FE">Executor</text>
+      <text class="s" x="721" y="95" fill="#A5B4FC">row iteration</text>
+    </g>
+
+    <g stroke="#6E7681" stroke-width="1.4" marker-end="url(#arw)">
+      <path d="M197 80 H206"/><path d="M362 80 H371"/>
+      <path d="M527 80 H536"/><path d="M692 80 H701"/>
+    </g>
+
+    <!-- wrap into the storage layer -->
+    <g stroke="#6E7681" stroke-width="1.4" fill="none">
+      <path d="M855 80 H874 V133 H545"/>
+      <path d="M355 133 H60 V156" marker-end="url(#arw)"/>
+    </g>
+    <text class="s" x="450" y="137" text-anchor="middle" fill="#6E7681">storage layer</text>
+
+    <!-- storage layer -->
+    <g>
+      <rect x="45"  y="160" width="255" height="64" rx="9" fill="#161B22" stroke="#30363D"/>
+      <text class="t" x="61" y="188">Buffer pool</text>
+      <text class="s" x="61" y="206">fixed-size pages &#183; LRU eviction</text>
+
+      <rect x="322" y="160" width="255" height="64" rx="9" fill="#161B22" stroke="#30363D"/>
+      <text class="t" x="338" y="188">B+ tree index</text>
+      <text class="s" x="338" y="206">node split &#183; merge &#183; range scan</text>
+
+      <rect x="600" y="160" width="255" height="64" rx="9" fill="#D29922" fill-opacity="0.12" stroke="#D29922" stroke-opacity="0.55"/>
+      <text class="t" x="616" y="188" fill="#F0C674">Write-ahead log</text>
+      <text class="s" x="616" y="206" fill="#D8B25E">append before you mutate</text>
+    </g>
+
+    <g stroke="#6E7681" stroke-width="1.4" marker-end="url(#arw)">
+      <path d="M302 192 H311"/><path d="M579 192 H588"/>
+    </g>
+
+    <!-- crash recovery loop -->
+    <g stroke="#D29922" stroke-width="1.4" stroke-dasharray="4 3.5" fill="none">
+      <path d="M727 224 V258 H172 V226" marker-end="url(#arwa)"/>
+    </g>
+    <text class="cap" x="450" y="250" text-anchor="middle" fill="#D29922">kill -9 &#8594; replay the log on restart &#8594; tree back to a consistent state</text>
+
+    <text class="cap" x="450" y="292" text-anchor="middle">Every box above is code I wrote: page layout, tree rebalancing, eviction policy, log records, parser.</text>
+  </g>
+</svg>
