@@ -18,37 +18,37 @@
   <rect x="1" y="1" width="898" height="218" rx="13" fill="url(#gs)" opacity="0.4"/>
 
   <text class="mono hdr" x="30" y="34">BY THE NUMBERS</text>
-  <text class="mono sub" x="870" y="34" text-anchor="end">self-rendered &#183; refreshed 2026-08-22</text>
+  <text class="mono sub" x="870" y="34" text-anchor="end">self-rendered &#183; refreshed 2026-08-23</text>
 
     <rect x="30.0" y="52" width="195.0" height="78" rx="10" fill="#161B22" stroke="#30363D"/>
-    <text class="mono val" x="48.0" y="94" fill="#22D3EE">85</text>
+    <text class="mono val" x="48.0" y="94" fill="#22D3EE">86</text>
     <text class="mono key" x="48.0" y="115">REPOSITORIES</text>
     <rect x="245.0" y="52" width="195.0" height="78" rx="10" fill="#161B22" stroke="#30363D"/>
-    <text class="mono val" x="263.0" y="94" fill="#818CF8">494</text>
+    <text class="mono val" x="263.0" y="94" fill="#818CF8">515</text>
     <text class="mono key" x="263.0" y="115">CONTRIBUTIONS / YR</text>
     <rect x="460.0" y="52" width="195.0" height="78" rx="10" fill="#161B22" stroke="#30363D"/>
-    <text class="mono val" x="478.0" y="94" fill="#3FB950">415</text>
+    <text class="mono val" x="478.0" y="94" fill="#3FB950">422</text>
     <text class="mono key" x="478.0" y="115">COMMITS / YR</text>
     <rect x="675.0" y="52" width="195.0" height="78" rx="10" fill="#161B22" stroke="#30363D"/>
     <text class="mono val" x="693.0" y="94" fill="#D29922">10</text>
     <text class="mono key" x="693.0" y="115">LANGUAGES SHIPPED</text>
 
-  <text class="mono key" x="30" y="148">PRIMARY LANGUAGE ACROSS 85 REPOSITORIES</text>
+  <text class="mono key" x="30" y="148">PRIMARY LANGUAGE ACROSS 86 REPOSITORIES</text>
   <g clip-path="url(#barclip)">
-      <rect x="30.0" y="158" width="437.7" height="13" fill="#3178c6"/>
-      <rect x="467.7" y="158" width="165.6" height="13" fill="#f1e05a"/>
-      <rect x="633.4" y="158" width="71.0" height="13" fill="#3572A5"/>
-      <rect x="704.4" y="158" width="47.3" height="13" fill="#e34c26"/>
-      <rect x="751.7" y="158" width="35.5" height="13" fill="#555555"/>
-      <rect x="787.2" y="158" width="23.7" height="13" fill="#f34b7d"/>
-      <rect x="810.8" y="158" width="59.2" height="13" fill="#6E7681"/>
+      <rect x="30.0" y="158" width="431.7" height="13" fill="#3178c6"/>
+      <rect x="461.7" y="158" width="163.3" height="13" fill="#f1e05a"/>
+      <rect x="625.0" y="158" width="81.7" height="13" fill="#3572A5"/>
+      <rect x="706.7" y="158" width="46.7" height="13" fill="#e34c26"/>
+      <rect x="753.3" y="158" width="35.0" height="13" fill="#555555"/>
+      <rect x="788.3" y="158" width="23.3" height="13" fill="#f34b7d"/>
+      <rect x="811.7" y="158" width="58.3" height="13" fill="#6E7681"/>
   </g>
     <circle cx="34.0" cy="196" r="4" fill="#3178c6"/>
-    <text class="mono leg" x="45.0" y="200">TypeScript <tspan fill="#6E7681">52.1%</tspan></text>
+    <text class="mono leg" x="45.0" y="200">TypeScript <tspan fill="#6E7681">51.4%</tspan></text>
     <circle cx="154.0" cy="196" r="4" fill="#f1e05a"/>
-    <text class="mono leg" x="165.0" y="200">JavaScript <tspan fill="#6E7681">19.7%</tspan></text>
+    <text class="mono leg" x="165.0" y="200">JavaScript <tspan fill="#6E7681">19.4%</tspan></text>
     <circle cx="274.0" cy="196" r="4" fill="#3572A5"/>
-    <text class="mono leg" x="285.0" y="200">Python <tspan fill="#6E7681">8.5%</tspan></text>
+    <text class="mono leg" x="285.0" y="200">Python <tspan fill="#6E7681">9.7%</tspan></text>
     <circle cx="394.0" cy="196" r="4" fill="#e34c26"/>
     <text class="mono leg" x="405.0" y="200">HTML <tspan fill="#6E7681">5.6%</tspan></text>
     <circle cx="514.0" cy="196" r="4" fill="#555555"/>
@@ -56,5 +56,5 @@
     <circle cx="634.0" cy="196" r="4" fill="#f34b7d"/>
     <text class="mono leg" x="645.0" y="200">C++ <tspan fill="#6E7681">2.8%</tspan></text>
     <circle cx="754.0" cy="196" r="4" fill="#6E7681"/>
-    <text class="mono leg" x="765.0" y="200">Other <tspan fill="#6E7681">7.0%</tspan></text>
+    <text class="mono leg" x="765.0" y="200">Other <tspan fill="#6E7681">6.9%</tspan></text>
 </svg>
